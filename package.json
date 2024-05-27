@@ -3,9 +3,30 @@
   "displayName": "Color Fatigue Dark",
   "description": "The Color Fatigue Dark theme is designed for developers who appreciate a calm, understanded aesthetic.",
   "version": "0.0.1",
+  "author": {
+    "name": "Xiang-Di, Lin",
+    "email": "linganinja.0120@gmail.com"
+  },
+  "publisher": "noidilin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noidilin/Color-Fatigue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noidilin/Color-Fatigue/issues"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
+  "keywords": [
+    "vscode",
+    "theme",
+    "dark",
+    "grayscale",
+    "monochrome",
+    "minimalism"
+  ],
   "categories": [
     "Themes"
   ],
