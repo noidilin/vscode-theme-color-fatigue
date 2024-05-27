@@ -1,0 +1,21 @@
+{
+  "name": "color-fatigue",
+  "displayName": "Color Fatigue Dark",
+  "description": "The Color Fatigue Dark theme is designed for developers who appreciate a calm, understanded aesthetic.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Color Fatigue Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/color-fatigue-dark-color-theme.json"
+      }
+    ]
+  }
+}
