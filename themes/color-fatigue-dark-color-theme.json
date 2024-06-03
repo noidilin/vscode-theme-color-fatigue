@@ -193,6 +193,27 @@
     "breadcrumbPicker.background": "#191919",
     "editorGroupHeader.border": "#262626",
 
+    // symbol icon
+    // symbol icon - data
+    "symbolIcon.arrayForeground": "#cccccc",
+    "symbolIcon.objectForeground": "#a69f91",
+    "symbolIcon.numberForeground": "#727272",
+    "symbolIcon.stringForeground": "#8e8e8e",
+    "symbolIcon.typeParameterForeground": "#dcdcdc",
+    // symbol icon - module
+    "symbolIcon.moduleForeground": "#8e8e8e",
+    "symbolIcon.packageForeground": "#8e8e8e",
+    "symbolIcon.namespaceForeground": "#cccccc",
+    // symbol icon - class
+    "symbolIcon.classForeground": "#eaeaea",
+    "symbolIcon.constructorForeground": "#cccccc",
+    "symbolIcon.functionForeground": "#a69f91",
+    "symbolIcon.methodForeground": "#a69f91",
+    "symbolIcon.propertyForeground": "#626262",
+    "symbolIcon.fieldForeground": "#626262",
+    "symbolIcon.variableForeground": "#8e8e8e",
+    "symbolIcon.constantForeground": "#706c62",
+
     // scrollbar
     "scrollbarSlider.background": "#2d2d2d",
     "scrollbarSlider.hoverBackground": "#505050",
@@ -520,39 +541,23 @@
     "settings.checkboxBorder": "#191919",
     "settings.dropdownBorder": "#191919",
     "settings.textInputBorder": "#191919",
-    "symbolIcon.arrayForeground": "#8d8d8d",
     "symbolIcon.booleanForeground": "#8d8d8d",
-    "symbolIcon.classForeground": "#8d8d8d",
     "symbolIcon.colorForeground": "#8d8d8d",
-    "symbolIcon.constantForeground": "#8d8d8d",
-    "symbolIcon.constructorForeground": "#8d8d8d",
     "symbolIcon.enumeratorForeground": "#8d8d8d",
     "symbolIcon.enumeratorMemberForeground": "#8d8d8d",
     "symbolIcon.eventForeground": "#8d8d8d",
-    "symbolIcon.fieldForeground": "#8d8d8d",
     "symbolIcon.fileForeground": "#8d8d8d",
     "symbolIcon.folderForeground": "#8d8d8d",
-    "symbolIcon.functionForeground": "#8d8d8d",
     "symbolIcon.interfaceForeground": "#8d8d8d",
     "symbolIcon.keyForeground": "#8d8d8d",
     "symbolIcon.keywordForeground": "#8d8d8d",
-    "symbolIcon.methodForeground": "#8d8d8d",
-    "symbolIcon.moduleForeground": "#8d8d8d",
-    "symbolIcon.namespaceForeground": "#8d8d8d",
     "symbolIcon.nullForeground": "#8d8d8d",
-    "symbolIcon.numberForeground": "#8d8d8d",
-    "symbolIcon.objectForeground": "#8d8d8d",
     "symbolIcon.operatorForeground": "#8d8d8d",
-    "symbolIcon.packageForeground": "#8d8d8d",
-    "symbolIcon.propertyForeground": "#8d8d8d",
     "symbolIcon.referenceForeground": "#8d8d8d",
     "symbolIcon.snippetForeground": "#8d8d8d",
-    "symbolIcon.stringForeground": "#8d8d8d",
     "symbolIcon.structForeground": "#8d8d8d",
     "symbolIcon.textForeground": "#8d8d8d",
-    "symbolIcon.typeParameterForeground": "#8d8d8d",
     "symbolIcon.unitForeground": "#8d8d8d",
-    "symbolIcon.variableForeground": "#8d8d8d",
     "textPreformat.foreground": "#8d8d8d",
     "window.activeBorder": "#191919"
 
@@ -1516,12 +1521,13 @@
       }
     },
 
-    // - JavaScript template quote string - #888888
+    // - JavaScript template literals template string - #888888
     {
-      "name": "JavaScript Template Quote String",
+      "name": "JavaScript Template Literals (Template String)",
       "scope": [
-        "punctuation.quasi.element.begin.js",
-        "punctuation.quasi.element.end.js",
+        "punctuation.quasi.element",
+        // "punctuation.quasi.element.begin.js",
+        // "punctuation.quasi.element.end.js",
         "punctuation.definition.quasi.begin.js",
         "punctuation.definition.quasi.end.js"
       ],
