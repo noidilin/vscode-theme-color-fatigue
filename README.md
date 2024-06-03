@@ -13,8 +13,8 @@ The Color Fatigue Dark theme is designed for developers who appreciate a calm, u
 
 > File Icons: I use [Quill Icons](https://github.com/cdonohue/vscode-quill-icons) as my icon. Feel free to try out different icons in the marketplace.
 
-![broad view](https://github.com/noidilin/Color-Fatigue/blob/main/img/broad-view.jpg)
-![terminal](https://github.com/noidilin/Color-Fatigue/blob/main/img/terminal.jpg)
+![broad view](https://raw.githubusercontent.com/noidilin/vscode-theme-color-fatigue/main/img/broad-view.jpg)
+![terminal](https://raw.githubusercontent.com//noidilin/vscode-theme-color-fatigue/main/img/terminal.jpg)
 
 ## How to Apply
 

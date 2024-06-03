@@ -1,53 +1,54 @@
 {
-	"name": "color-fatigue",
-	"displayName": "Color Fatigue Dark",
-	"description": "The Color Fatigue Dark theme is designed for developers who appreciate a calm, understanded aesthetic.",
-	"version": "0.0.2",
-	"author": {
-		"name": "Xiang-Di, Lin",
-		"email": "linganinja.0120@gmail.com"
-	},
-	"publisher": "noidilin",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/noidilin/Color-Fatigue.git"
-	},
-	"bugs": {
-		"url": "https://github.com/noidilin/Color-Fatigue/issues"
-	},
-	"engines": {
-		"vscode": "^1.87.0"
-	},
-	"keywords": [
-		"vscode",
-		"theme",
-		"dark",
-		"grayscale",
-		"monochrome",
-		"minimalism"
-	],
-	"categories": [
-		"Themes"
-	],
-	"contributes": {
-		"themes": [
-			{
-				"label": "Color Fatigue Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/color-fatigue-dark-color-theme.json"
-			}
-		]
-	},
-	"__metadata": {
-		"id": "bd206986-e353-4ede-aadf-c0867e8f4b7c",
-		"publisherId": "3e971d8e-7ea5-45d1-85d6-11f7f79243b5",
-		"publisherDisplayName": "noidilin",
-		"targetPlatform": "undefined",
-		"updated": false,
-		"isPreReleaseVersion": false,
-		"hasPreReleaseVersion": false,
-		"installedTimestamp": 1716961092033,
-		"pinned": false
-	}
+  "name": "color-fatigue",
+  "displayName": "Color Fatigue Dark",
+  "description": "The Color Fatigue Dark theme is designed for developers who appreciate a calm, understanded aesthetic.",
+  "license": "MIT",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "publisher": "noidilin",
+  "author": {
+    "name": "Xiang-Di, Lin",
+    "email": "linganinja.0120@gmail.com"
+  },
+  "icon": "./img/color-fatigue-logo-256.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noidilin/Color-Fatigue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noidilin/Color-Fatigue/issues"
+  },
+  "keywords": [
+    "vscode",
+    "theme",
+    "dark",
+    "grayscale",
+    "monochrome",
+    "minimalism"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Color Fatigue Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/color-fatigue-dark-color-theme.json"
+      }
+    ]
+  },
+  "__metadata": {
+    "id": "bd206986-e353-4ede-aadf-c0867e8f4b7c",
+    "publisherId": "3e971d8e-7ea5-45d1-85d6-11f7f79243b5",
+    "publisherDisplayName": "noidilin",
+    "targetPlatform": "undefined",
+    "updated": false,
+    "isPreReleaseVersion": false,
+    "hasPreReleaseVersion": false,
+    "installedTimestamp": 1716961092033,
+    "pinned": false
+  }
 }
