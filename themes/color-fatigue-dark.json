@@ -2,58 +2,54 @@
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
 
-  // grayscale
-  // #eaeaea (white point)
-  // #dcdcdc
-  // #cccccc (text - title)
-  // #b3b3b3 (text - normal)
-  // #a69f91 (accent - light)
-  // #8e897d (accent - normal)
-  // #8e8e8e (accent - grayscale)
-  // #706c62 (accent - dim)
-  // #727272
-  // #626262
-  // #474747 (match text background)
-  // #404040
-  // #3a3a3a
-  // #353535
-  // #303030 (selection text background)
-  // #2d2d2d
-  // #2a2a2a
-  // #262626
-  // #202020 (bg - secondary, bg - third)
-  // #191919 (bg - main)
-  //
-  // indication
-  // #d4976c (warn)
-  // #cd8185 (error)
-  // #899796 (info, default)
-  // #a2ae4f (success)
-  // #ea695240 (removed background)
-  // #89b48250 (inserted background)
-  //
-  // terminal
-  // #eaeaea (fg)
-  // #303030 (selection)
-  // #606060 (bright-black)
-  // #9da8ae (bright-blue)
-  // #8eb9b7 (bright-cyan)
-  // #b9c758 (bright-green)
-  // #d8e09f (bright-magenta)
-  // #ddac89 (bright-orange, extra color)
-  // #d28e91 (bright-red)
-  // #fafaed (bright-white)
-  // #e8cd8f (bright-yellow)
-  // #474747 (black)
-  // #899796 (blue)
-  // #769997 (cyan)
-  // #a2ae4f (green)
-  // #c0c88e (magenta)
-  // #d4976c (orange, extra color)
-  // #cd8185 (red)
-  // #dadac8 (white)
-  // #cdb67f (yellow)
-  //
+  /* grayscale
+  #fafaed (accent - bright white)
+  #eaeaea (white point)
+  #dcdcdc
+  #dadac8 (accent - white)
+  #cccccc (text - title)
+  #b3b3b3 (text - normal)
+  #a69f91 (accent - light)
+  #8e897d (accent - normal)
+  #8e8e8e (text - subtext1)
+  #706c62 (accent - dim)
+  #727272
+  #626262
+  #474747 (match text background)
+  #404040
+  #3a3a3a
+  #353535
+  #303030 (selection text background)
+  #2d2d2d
+  #2a2a2a
+  #262626
+  #202020 (bg - secondary, bg - third)
+  #191919 (bg - main)
+  */
+
+  /*   indication
+  #d4976c (warn)                      #ddac89 (warn-light)
+  #cd8185 (error)
+  #899796 (info, default)
+  #a2ae4f (success)
+  #ea695240 (removed background)
+  #89b48250 (inserted background) 
+  */
+
+  /* terminal
+  #dadac8 (white)                     #fafaed (bright-white)
+  #474747 (black)                     #606060 (bright-black)  #626262
+  #eaeaea (fg)
+  #303030 (selection)
+  #cd8185 (red)                       #d28e91 (bright-red)
+  #d4976c (orange, extra color)       #ddac89 (bright-orange, extra color)
+  #cdb67f (yellow)                    #e8cd8f (bright-yellow)
+  #a2ae4f (green)                     #b9c758 (bright-green)
+  #899796 (blue)                      #9da8ae (bright-blue)
+  #769997 (cyan)                      #8eb9b7 (bright-cyan)
+  #5f5f87 (magenta)                   #8787af (bright-magenta)
+  #c0c88e (magenta)                   #d8e09f (bright-magenta)
+  */
 
   "colors": {
     // general
@@ -163,7 +159,7 @@
     "terminal.border": "#353535",
     "terminal.selectionBackground": "#2d2d2d",
     "terminalCursor.background": "#191919",
-    "terminalCursor.foreground": "#b3b3b3",
+    "terminalCursor.foreground": "#eaeaea",
     "badge.background": "#606060",
     "badge.foreground": "#161616",
 
@@ -285,13 +281,13 @@
     "editorBracketHighlight.unexpectedBracket.foreground": "#cd8185cc",
     "editorBracketMatch.background": "#202020",
     "editorBracketMatch.border": "#404040",
-    "editorBracketHighlight.foreground1": "#545454",
-    "editorBracketHighlight.foreground2": "#4b4b4b",
-    "editorBracketHighlight.foreground3": "#404040",
-    "editorBracketHighlight.foreground4": "#3a3a3a",
-    "editorBracketHighlight.foreground5": "#333333",
-    "editorBracketHighlight.foreground6": "#2d2d2d",
-    // dim the bracket pari guide to achieve less distraction
+    "editorBracketHighlight.foreground1": "#626262",
+    "editorBracketHighlight.foreground2": "#545454",
+    "editorBracketHighlight.foreground3": "#4b4b4b",
+    "editorBracketHighlight.foreground4": "#404040",
+    "editorBracketHighlight.foreground5": "#3a3a3a",
+    "editorBracketHighlight.foreground6": "#333333",
+    // dim the bracket pair guide to achieve less distraction
     "editorBracketPairGuide.activeBackground1": "#404040",
     "editorBracketPairGuide.activeBackground2": "#3a3a3a",
     "editorBracketPairGuide.activeBackground3": "#333333",
@@ -428,11 +424,11 @@
     "gitDecoration.deletedResourceForeground": "#cd8185",
     "gitDecoration.conflictingResourceForeground": "#cdb67f",
     "gitDecoration.renamedResourceForeground": "#d4976c",
-    "gitDecoration.ignoredResourceForeground": "#353535",
+    "gitDecoration.ignoredResourceForeground": "#474747",
     "gitDecoration.stageDeletedResourceForeground": "#d28e91",
     "gitDecoration.stageModifiedResourceForeground": "#9da8ae",
     "gitDecoration.submoduleResourceForeground": "#8e8e8e",
-    "gitDecoration.untrackedResourceForeground": "#606060",
+    "gitDecoration.untrackedResourceForeground": "#626262",
 
     // editor: diff
     "diffEditor.insertedLineBackground": "#89b48230",
@@ -948,8 +944,8 @@
   // #c0c0c0 - function-name, class-inherited, tag-ID, css-value
   // #adadad - separator, regex-escape
   // #a0a0a0 - keyword, variable.language, tag-attr, markup-heading, JSON
-  // #8e8b85 - function-call, variable.other, markup-quote
-  // #888888 - class, package, variable, parameter, number, css-pseudo, css-property
+  // #8e8b85 - function-call, variable.other, markup-quote, JSX bracket
+  // #888888 - class, package, variable, parameter, number, css-pseudo, css-property, template literal
   // #707070 - string, css-string, link, regex
   // #686868 - comment emphasis, css-unit,
   // #5d5d5d - markup-separator, embedded-string
@@ -1270,6 +1266,19 @@
       ],
       "settings": {
         "foreground": "#adadad"
+      }
+    },
+    // JSX nested bracket
+    {
+      "name": "JSX nested bracket",
+      "scope": [
+        "punctuation.section.embedded.begin.jsx",
+        "punctuation.section.embedded.end.jsx"
+      ],
+      "settings": {
+        // overwritten by bracket pair setting in vs code.
+        // "foreground": "#8e8b85",
+        "fontStyle": "bold underline"
       }
     },
     // link - #707070
