@@ -36,7 +36,7 @@
       {
         "label": "Color Fatigue Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/color-fatigue-dark-color-theme.json"
+        "path": "./themes/color-fatigue-dark.json"
       }
     ]
   },
