@@ -1250,22 +1250,41 @@
         "foreground": "#5d5d5d"
       }
     },
-    // separator (default embedded color) - #adadad
+    // punctuation separator, terminator, accessor  - #aaaaaa
     {
-      "name": "Default Embedded Color",
+      "name": "Punctuation - separator, terminator, accessor",
       "scope": [
-        "source.elixir.embedded",
-        "punctuation.section.embedded.begin.js",
-        "punctuation.section.embedded.end.js",
-        "punctuation.section.embedded.begin.erb",
-        "punctuation.section.embedded.end.erb",
-        "punctuation.definition.tag",
+        // commas, colons
         "punctuation.separator",
-        "punctuation.accessor",
-        "meta.brace"
+        // statement terminator (semicolons)
+        "punctuation.terminator",
+        // member access, scope resolution like dot `.`
+        "punctuation.accessor"
       ],
       "settings": {
-        "foreground": "#adadad"
+        "foreground": "#aaaaaa"
+      }
+    },
+    // punctuation braces, parens, brackets...  - #4b4b4b
+    {
+      "name": "Punctuation - braces, parens, brackets...",
+      "scope": [
+        // {}
+        "meta.braces",
+        // ()
+        "meta.parens",
+        // []
+        "meta.brackets",
+        // <>
+        "meta.generic",
+        // HTML and XML tags
+        "meta.tag",
+        "punctuation.definition.tag",
+        "punctuation.section.embedded.begin.js",
+        "punctuation.section.embedded.end.js"
+      ],
+      "settings": {
+        "foreground": "#4b4b4b"
       }
     },
     // JSX nested bracket
@@ -1505,7 +1524,7 @@
         "string.regexp.character-class",
         "string.regexp constant.character.escape",
         "string.regexp source.ruby.embedded",
-        "string.regexp string.regexp.arbitrary-repitition"
+        "string.regexp string.regexp.arbitrary-repetition"
       ],
       "settings": {
         "foreground": "#707070"
@@ -1546,9 +1565,8 @@
       }
     },
 
-    /* ------------------------------------------------------------
     // - Diff
-    // diff header
+    // diff header -#8e8b85
     {
       "name": "Diff: Header",
       "scope": ["meta.diff", "meta.diff.header"],
@@ -1556,7 +1574,7 @@
         "foreground": "#8e8b85"
       }
     },
-    // diff deleted
+    // diff deleted - #b07878
     {
       "name": "Diff: Deleted",
       "scope": [
@@ -1565,10 +1583,10 @@
         "punctuation.definition.deleted"
       ],
       "settings": {
-        "foreground": "#a0a0a0"
+        "foreground": "#b07878"
       }
     },
-    // diff inserted
+    // diff inserted - #778777
     {
       "name": "Diff: Inserted",
       "scope": [
@@ -1577,35 +1595,34 @@
         "punctuation.definition.inserted"
       ],
       "settings": {
-        "foreground": "#c0c0c0"
+        "foreground": "#778777"
       }
     },
-    // diff changed
+    // diff changed - #b3ad9f
     {
       "name": "Diff: Changed",
       "scope": ["markup.changed", "punctuation.definition.changed"],
       "settings": {
-        "foreground": "#e5c07b"
+        "foreground": "#b3ad9f"
       }
     },
-    // diff ignored & untracked
+    // diff ignored & untracked - #686868
     {
       "name": "Diff: Ignored & Untracked",
       "scope": ["markup.ignored", "markup.untracked"],
       "settings": {
-        "foreground": "#888888"
+        "foreground": "#686868"
       }
     },
-    // diff range
+    // diff range - #aaaaaa
     {
       "name": "Diff: Range",
       "scope": "meta.diff.range",
       "settings": {
-        "foreground": "#eaeaea",
+        "foreground": "#aaaaaa",
         "fontStyle": "bold"
       }
     },
-    ------------------------------------------------------------ */
 
     /* ------------------------------------------------------------
       ___        _     ___ _        _     
