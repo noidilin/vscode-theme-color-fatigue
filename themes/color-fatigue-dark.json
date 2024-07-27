@@ -1,56 +1,8 @@
 {
+  // fix json: https://codebeautify.org/json-fixer#
+  // scope naming: https://www.sublimetext.com/docs/scope_naming.html
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
-
-  /* grayscale
-  #fafaed (accent - bright white)
-  #eaeaea (white point)
-  #dcdcdc
-  #dadac8 (accent - white)
-  #cccccc (text - title)
-  #b3b3b3 (text - normal)
-  #a69f91 (accent - light)
-  #8e897d (accent - normal)
-  #8e8e8e (text - subtext1)
-  #706c62 (accent - dim)
-  #727272
-  #626262
-  #474747 (match text background)
-  #404040
-  #3a3a3a
-  #353535
-  #303030 (selection text background)
-  #2d2d2d
-  #2a2a2a
-  #262626
-  #202020 (bg - secondary, bg - third)
-  #191919 (bg - main)
-  */
-
-  /*   indication
-  #d4976c (warn)                      #ddac89 (warn-light)
-  #cd8185 (error)
-  #899796 (info, default)
-  #a2ae4f (success)
-  #ea695240 (removed background)
-  #89b48250 (inserted background) 
-  */
-
-  /* terminal
-  #dadac8 (white)                     #fafaed (bright-white)
-  #474747 (black)                     #606060 (bright-black)  #626262
-  #eaeaea (fg)
-  #303030 (selection)
-  #cd8185 (red)                       #d28e91 (bright-red)
-  #d4976c (orange, extra color)       #ddac89 (bright-orange, extra color)
-  #cdb67f (yellow)                    #e8cd8f (bright-yellow)
-  #a2ae4f (green)                     #b9c758 (bright-green)
-  #899796 (blue)                      #9da8ae (bright-blue)
-  #769997 (cyan)                      #8eb9b7 (bright-cyan)
-  #5f5f87 (magenta)                   #8787af (bright-magenta)
-  #c0c88e (magenta)                   #d8e09f (bright-magenta)
-  */
-
   "colors": {
     // general
     "focusBorder": "#474747",
@@ -938,24 +890,6 @@
     //"window.inactiveBorder": null
   },
 
-  // Token Color Palette
-  // #eaeaea - type, class-library, constant-deSat, tag-name, css-function, markup-raw
-  // #b4b0a7 - constant
-  // #c0c0c0 - function-name, class-inherited, tag-ID, css-value
-  // #adadad - separator, regex-escape
-  // #a0a0a0 - keyword, variable.language, tag-attr, markup-heading, JSON
-  // #8e8b85 - function-call, variable.other, markup-quote, JSX bracket
-  // #888888 - class, package, variable, parameter, number, css-pseudo, css-property, template literal
-  // #707070 - string, css-string, link, regex
-  // #686868 - comment emphasis, css-unit,
-  // #5d5d5d - markup-separator, embedded-string
-  // #555555 - comment, markup-punctuation
-  // #cd8185 - invalid, invalid-deprecated
-
-  // Diff (currently disabled)
-  // #8e8b85(header), #c0c0c0(inserted), #a0a0a0(deleted)
-  // #eaeaea(range), #888888(untracked), #707070(changed)
-
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "comment": { "foreground": "#555555" },
@@ -994,13 +928,6 @@
   },
 
   "tokenColors": [
-    /* ------------------------------------------------------------
-      ___          _      ___          _            
-     | _ ) __ _ __(_)__  / __|_  _ _ _| |_ __ ___ __
-     | _ \/ _` (_-< / _| \__ \ || | ' \  _/ _` \ \ /
-     |___/\__,_/__/_\__| |___/\_, |_||_\__\__,_/_\_\
-                              |__/                  
-    ------------------------------------------------------------ */
     // - Keyword
     // keyword - #9d9d9d
     {
@@ -1106,7 +1033,8 @@
       "name": "Constant",
       "scope": [
         "constant.language",
-        "constant.character", // library constant
+        // library constant
+        "constant.character",
         "support.constant"
       ],
       "settings": {
@@ -1115,11 +1043,12 @@
     },
     // constant deSat - #eaeaea
     {
-      "name": "Constant Desaturation",
+      "name": "Constant De-saturation",
       "scope": [
         // built-in constant
         "constant",
-        "constant.other" // css color
+        // css color
+        "constant.other"
       ],
       "settings": {
         "foreground": "#eaeaea"
@@ -1129,10 +1058,8 @@
     {
       "name": "Variable Object",
       "scope": [
-        // github-dark-theme
         "variable",
         "string variable",
-        // one-monokai-theme
         "variable.other.object",
         "variable.other.constant",
         "variable.other.global",
@@ -1221,7 +1148,6 @@
       "scope": [
         "string",
         "string.template",
-        // from github-dark theme
         "punctuation.definition.string",
         "string punctuation.section.embedded source"
       ],
@@ -1307,7 +1233,6 @@
         "string.detected-link",
         "constant.other.reference.link",
         "string.other.link",
-        // markdown link
         "markup.underline.link.markdown"
       ],
       "settings": {
@@ -1332,14 +1257,6 @@
         "fontStyle": "italic strikethrough"
       }
     },
-
-    /* ------------------------------------------------------------
-      ___ _        _        _            _   
-     / __| |_ _  _| |___ __| |_  ___ ___| |_ 
-     \__ \  _| || | / -_|_-< ' \/ -_) -_)  _|
-     |___/\__|\_, |_\___/__/_||_\___\___|\__|
-              |__/                           
-    ------------------------------------------------------------ */
 
     // CSS
     // css property - #878787
@@ -1416,12 +1333,10 @@
     {
       "name": "CSS: Variable & Function",
       "scope": [
-        // variable
         "variable.css",
         "variable.scss",
         "variable.less",
         "variable.sass",
-        // function
         "function.css",
         "function.scss",
         "function.less",
@@ -1431,14 +1346,6 @@
         "foreground": "#dcdcdc"
       }
     },
-
-    /* ------------------------------------------------------------
-      __  __          _             
-     |  \/  |__ _ _ _| |___  _ _ __ 
-     | |\/| / _` | '_| / / || | '_ \
-     |_|  |_\__,_|_| |_\_\\_,_| .__/
-                              |_|   
-    ------------------------------------------------------------ */
 
     // Markup
     // markup punctuation - #555555
@@ -1466,10 +1373,8 @@
     {
       "name": "Markup: Heading",
       "scope": [
-        // github-dark-theme
         "markup.heading",
         "markup.heading entity.name",
-        // one-monokai-theme
         "markup.heading.markdown"
       ],
       "settings": {
@@ -1506,14 +1411,6 @@
         "foreground": "#aaaaaa"
       }
     },
-
-    /* ------------------------------------------------------------
-      _____    _     _      _ 
-     |_   _| _(_)_ _(_)__ _| |
-       | || '_| \ V / / _` | |
-       |_||_| |_|\_/|_\__,_|_|
-                          
-    ------------------------------------------------------------ */
 
     // - Regex - #707070
     {
@@ -1624,19 +1521,14 @@
       }
     },
 
-    /* ------------------------------------------------------------
-      ___        _     ___ _        _     
-     | __|__ _ _| |_  / __| |_ _  _| |___ 
-     | _/ _ \ ' \  _| \__ \  _| || | / -_)
-     |_|\___/_||_\__| |___/\__|\_, |_\___|
-                               |__/       
-    ------------------------------------------------------------ */
     // font style - italic
     {
       "name": "Font Style: Italic",
       "scope": [
-        "variable.other.property", // property
-        "entity.name.function.member", // method
+        // property
+        "variable.other.property",
+        // method
+        "entity.name.function.member",
         "comment",
         "comment.block.documentation storage.type.class",
         "punctuation.definition.comment",
