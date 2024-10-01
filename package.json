@@ -3,7 +3,7 @@
   "displayName": "Color Fatigue Dark",
   "description": "The Color Fatigue Dark theme is designed for developers who appreciate a calm, understanded aesthetic.",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.87.0"
   },
