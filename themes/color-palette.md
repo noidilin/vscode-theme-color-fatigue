@@ -55,8 +55,6 @@
 
 - gogh-apprentice
 - ref: http://gogh-co.github.io/Gogh/
-- normal: https://coolors.co/b3ad9f-af5f5f-e0ca9d-5f875f-5f87af-5f5f87-5f8787
-- bright: https://coolors.co/dad5c8-de7878-f5dcab-87af87-8fafd7-8c8cbd-79b8b8
 
 #b3b3b3 (fg)
 #191919 (bg)
@@ -68,6 +66,9 @@ white: #dad5c8 #faf5eb
 
 ### 2024-08
 
+- normal: https://coolors.co/b3ad9f-b07878-c8a492-d6caab-778777-7d96ad-797994-769494
+- bright: https://coolors.co/dad5c8-cc9393-dcb5a5-ebd6b7-9bb09b-9db2cf-9f9fbd-92b3b3
+
 orange: #c8a492 #dcb5a5
 
 red: #b07878 #cc9393
@@ -78,6 +79,9 @@ magenta: #797994 #9f9fbd
 cyan: #769494 #92b3b3
 
 ### 2024-07
+
+- normal: https://coolors.co/b3ad9f-af5f5f-e0ca9d-5f875f-5f87af-5f5f87-5f8787
+- bright: https://coolors.co/dad5c8-de7878-f5dcab-87af87-8fafd7-8c8cbd-79b8b8
 
 orange: #ad7c58 #ddac89
 
