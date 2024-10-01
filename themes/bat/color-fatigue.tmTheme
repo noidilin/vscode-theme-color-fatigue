@@ -42,7 +42,7 @@
 				<key>lineHighlight</key>
 				<string>#222222</string>
 				<key>misspelling</key>
-				<string>#af5f5f</string>
+				<string>#b07878</string>
 				<key>selection</key>
 				<string>#303030</string>
 				<key>stackGuide</key>
@@ -206,7 +206,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eaeaea</string>
+				<string>#dcdcdc</string>
 			</dict>
 		</dict>
 		<dict>
@@ -257,7 +257,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string, string.template, punctuation.definition.string, string punctuation.section.embedded source</string>
+			<string>string, string.template, punctuation.definition.string, string punctuation.section.embedded source, meta.scriptblock</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -288,6 +288,43 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Link</string>
+			<key>scope</key>
+			<string>string.detected-link, constant.other.reference.link, string.other.link, markup.underline.link.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+				<key>foreground</key>
+				<string>#707070</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b07878</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid Deprecated</string>
+			<key>scope</key>
+			<string>invalid.deprecated</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic strikethrough</string>
+				<key>foreground</key>
+				<string>#b07878</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Punctuation - separator, terminator, accessor</string>
 			<key>scope</key>
 			<string>punctuation.separator, punctuation.terminator, punctuation.accessor</string>
@@ -309,6 +346,15 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>scope</key>
+			<string>meta.tag.jsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4e4e4e</string>
+			</dict>
+		</dict>
+		<dict>
 			<key>name</key>
 			<string>JSX nested bracket</string>
 			<key>scope</key>
@@ -317,43 +363,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold underline</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Link</string>
-			<key>scope</key>
-			<string>string.detected-link, constant.other.reference.link, string.other.link, markup.underline.link.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-				<key>foreground</key>
-				<string>#707070</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid</string>
-			<key>scope</key>
-			<string>invalid</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#af5f5f</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid Deprecated</string>
-			<key>scope</key>
-			<string>invalid.deprecated</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic strikethrough</string>
-				<key>foreground</key>
-				<string>#af5f5f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -386,7 +395,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e5c07b</string>
+				<string>#707070</string>
 			</dict>
 		</dict>
 		<dict>
@@ -419,7 +428,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eaeaea</string>
+				<string>#dcdcdc</string>
 			</dict>
 		</dict>
 		<dict>
@@ -491,7 +500,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eaeaea</string>
+				<string>#aaaaaa</string>
 			</dict>
 		</dict>
 		<dict>
@@ -559,7 +568,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#af5f5f</string>
+				<string>#b07878</string>
 			</dict>
 		</dict>
 		<dict>
@@ -570,7 +579,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f875f</string>
+				<string>#778777</string>
 			</dict>
 		</dict>
 		<dict>
@@ -623,7 +632,7 @@
 			<key>name</key>
 			<string>Font Style: Bold</string>
 			<key>scope</key>
-			<string>keyword, keyword.control, keyword.operator, keyword.other.template, keyword.other.substitution, keyword.other.new, variable.parameter, entity.name.variable.parameter, parameter.variable, parameter.variable.function, storage.type.function.arrow, meta.function.parameters variable.other, support.function.textbf, entity.name.function.definition.special.constructor, entity.name.function.definition.special.member.destructor, entity.name.section, storage.type.generic.wildcard, storage.type.annotation, punctuation.accessor, punctuation.definition.preprocessor, punctuation.separator.method, punctuation.section.directive, punctuation.bracket.angle, punctuation.separator.namespace, markup.bold, markup.bold.markdown, markup.bold string, markup.heading, markup.inline.raw punctuation.definition.raw, markup punctuation.definition, markdown.heading</string>
+			<string>keyword, keyword.control, keyword.operator, keyword.other.template, keyword.other.substitution, keyword.other.new, variable.parameter, entity.name.variable.parameter, parameter.variable, parameter.variable.function, storage.type.function.arrow, meta.function.parameters variable.other, support.function.textbf, entity.name.function.definition.special.constructor, entity.name.function.definition.special.member.destructor, entity.name.section, storage.type.generic.wildcard, storage.type.annotation, storage.type.powershell, punctuation.accessor, punctuation.definition.preprocessor, punctuation.separator.method, punctuation.section.directive, punctuation.bracket.angle, punctuation.separator.namespace, markup.bold, markup.bold.markdown, markup.bold string, markup.heading, markup.inline.raw punctuation.definition.raw, markup punctuation.definition, markdown.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -634,7 +643,7 @@
 			<key>name</key>
 			<string>Font Style: Bold-Italic</string>
 			<key>scope</key>
-			<string>markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold, markup.bold markup.italic string, markup.italic markup.bold string, markup.quote markup.bold string, meta.attribute.id entity.other.attribute-name, source.ocaml punctuation.definition.tag emphasis, comment.block.documentation variable.other</string>
+			<string>storage.type.type, markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold, markup.bold markup.italic string, markup.italic markup.bold string, markup.quote markup.bold string, meta.attribute.id entity.other.attribute-name, source.ocaml punctuation.definition.tag emphasis, comment.block.documentation variable.other</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -689,7 +698,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ad7c58</string>
+				<string>#c8a492</string>
 			</dict>
 		</dict>
 		<dict>
@@ -698,7 +707,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#af5f5f</string>
+				<string>#b07878</string>
 			</dict>
 		</dict>
 		<dict>
@@ -707,7 +716,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f87af</string>
+				<string>#7d96ad</string>
 			</dict>
 		</dict>
 	</array>

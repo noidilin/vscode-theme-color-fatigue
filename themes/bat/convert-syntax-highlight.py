@@ -23,7 +23,7 @@ global_settings = {
         "foreground": "#b3b3b3",
         "caret": "#eaeaea",
         "lineHighlight": "#222222",  # bg for the current line
-        "misspelling": "#af5f5f",  # color to use for the underline drawn under misspelled words
+        "misspelling": "#b07878",  # color to use for the underline drawn under misspelled words
         "accent": "#dad5c8",  # color made available for use by the theme
         "selection": "#303030",  # bg of selected text
         "inactiveSelection": "#242424",  # not currently focused selection

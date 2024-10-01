@@ -1149,7 +1149,8 @@
         "string",
         "string.template",
         "punctuation.definition.string",
-        "string punctuation.section.embedded source"
+        "string punctuation.section.embedded source",
+        "meta.scriptblock"
       ],
       "settings": {
         "foreground": "#707070"
@@ -1176,6 +1177,39 @@
         "foreground": "#5d5d5d"
       }
     },
+    // link - #707070
+    {
+      "name": "Link",
+      "scope": [
+        "string.detected-link",
+        "constant.other.reference.link",
+        "string.other.link",
+        "markup.underline.link.markdown"
+      ],
+      "settings": {
+        "foreground": "#707070",
+        "fontStyle": "underline"
+      }
+    },
+    // invalid - #b07878
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#b07878"
+      }
+    },
+    // invalid deprecated - #b07878
+    {
+      "name": "Invalid Deprecated",
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "#b07878",
+        "fontStyle": "italic strikethrough"
+      }
+    },
+
+    // - Punctuation
     // punctuation separator, terminator, accessor  - #aaaaaa
     {
       "name": "Punctuation - separator, terminator, accessor",
@@ -1213,6 +1247,15 @@
         "foreground": "#4b4b4b"
       }
     },
+
+    // - JSX
+    // HTML content - #4e4e4e
+    {
+      "scope": ["meta.tag.jsx"],
+      "settings": {
+        "foreground": "#4e4e4e"
+      }
+    },
     // JSX nested bracket
     {
       "name": "JSX nested bracket",
@@ -1224,37 +1267,6 @@
         // overwritten by bracket pair setting in vs code.
         // "foreground": "#8e8b85",
         "fontStyle": "bold underline"
-      }
-    },
-    // link - #707070
-    {
-      "name": "Link",
-      "scope": [
-        "string.detected-link",
-        "constant.other.reference.link",
-        "string.other.link",
-        "markup.underline.link.markdown"
-      ],
-      "settings": {
-        "foreground": "#707070",
-        "fontStyle": "underline"
-      }
-    },
-    // invalid - #b07878
-    {
-      "name": "Invalid",
-      "scope": "invalid",
-      "settings": {
-        "foreground": "#b07878"
-      }
-    },
-    // invalid deprecated - #b07878
-    {
-      "name": "Invalid Deprecated",
-      "scope": "invalid.deprecated",
-      "settings": {
-        "foreground": "#b07878",
-        "fontStyle": "italic strikethrough"
       }
     },
 
@@ -1285,7 +1297,7 @@
         "foreground": "#c0c0c0"
       }
     },
-    // css string - #e5c07b
+    // css string - #707070
     {
       "name": "CSS: Variable String",
       "scope": [
@@ -1295,7 +1307,7 @@
         "variable.sass.string"
       ],
       "settings": {
-        "foreground": "#e5c07b"
+        "foreground": "#707070"
       }
     },
     // css unit - #686868
@@ -1597,6 +1609,7 @@
         "entity.name.section",
         "storage.type.generic.wildcard",
         "storage.type.annotation",
+        "storage.type.powershell",
         "punctuation.accessor",
         "punctuation.definition.preprocessor",
         "punctuation.separator.method",
@@ -1621,6 +1634,7 @@
     {
       "name": "Font Style: Bold-Italic",
       "scope": [
+        "storage.type.type",
         // markup
         "markup.bold markup.italic",
         "markup.italic markup.bold",
