@@ -18,10 +18,10 @@
   "icon": "img/color-fatigue-logo-256.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/noidilin/Color-Fatigue.git"
+    "url": "https://github.com/noidilin/vscode-theme-color-fatigue.git"
   },
   "bugs": {
-    "url": "https://github.com/noidilin/Color-Fatigue/issues"
+    "url": "https://github.com/noidilin/vscode-theme-color-fatigue/issues"
   },
   "keywords": [
     "vscode",
